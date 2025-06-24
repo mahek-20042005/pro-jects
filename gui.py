@@ -32,7 +32,7 @@ def run_app():
     tk.Button(root, text="📊 Show Summary", command=show_summary, **btn_style).pack(pady=6)
     tk.Button(root, text="📂 Category Summary", command=show_cat_summary, **btn_style).pack(pady=6)
     tk.Button(root, text="📅 Monthly Summary", command=show_monthly_summary, **btn_style).pack(pady=6)
-    tk.Button(root, text="🧹 Clear All Data", command=clear_data, bg="#d9534f", activebackground="#c9302c", **btn_style).pack(pady=6)
+    tk.Button(root,text="🧹 Clear All Data",command=clear_data,**{**btn_style, "bg": "#d9534f", "activebackground": "#c9302c"}).pack(pady=6)
 
     footer = tk.Label(root, text="Made with ❤️", font=("Helvetica", 9), bg='#f4f8fb', fg="#666")
     footer.pack(pady=10)
